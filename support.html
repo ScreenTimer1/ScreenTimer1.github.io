@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DarkPlayer Support</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0e0e0e;
+      --surface: #171717;
+      --surface-2: #222;
+      --text: #f1f1f1;
+      --muted: #e5bcc4;
+      --accent: #ffb1c3;
+      --hot: #ff4b89;
+      --cyan: #00dbe9;
+      --line: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 16% 2%, rgba(255, 75, 137, 0.18), transparent 32rem),
+        radial-gradient(circle at 86% 8%, rgba(0, 219, 233, 0.13), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.58;
+    }
+    main {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 22px;
+      padding: 34px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(255, 177, 195, 0.12), rgba(0, 0, 0, 0.12)), var(--surface);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+    }
+    .mark {
+      width: 88px;
+      height: 88px;
+      border-radius: 24px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--hot), #b833d8, var(--cyan));
+      box-shadow: 0 18px 48px rgba(255, 75, 137, 0.28);
+      font-size: 42px;
+      font-weight: 900;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(42px, 8vw, 80px);
+      line-height: 0.96;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      letter-spacing: 0;
+    }
+    p, li { color: rgba(241, 241, 241, 0.84); }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 22px;
+    }
+    .card {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(23, 23, 23, 0.86);
+    }
+    .wide { grid-column: 1 / -1; }
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 4px;
+    }
+    ul { padding-left: 22px; }
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 44px;
+      padding: 0 18px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent), var(--hot));
+      color: #16040a;
+      text-decoration: none;
+    }
+    .pill.secondary {
+      background: var(--surface-2);
+      color: var(--text);
+      border: 1px solid var(--line);
+    }
+    footer {
+      margin-top: 44px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      main { padding-top: 34px; }
+      .hero { padding: 26px; }
+      .grid { grid-template-columns: 1fr; }
+      .wide { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="mark">≋</div>
+      <div>
+        <h1>DarkPlayer Support</h1>
+        <p class="muted">
+          Help for local importing, WiFi Transfer, Google Drive import, equalizer playback,
+          background controls, and playlist management.
+        </p>
+        <div class="button-row">
+          <a class="pill" href="#contact">Contact Support</a>
+          <a class="pill secondary" href="privacy-policy.html">Privacy Policy</a>
+          <a class="pill secondary" href="terms-of-use.html">Terms of Use</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="Support topics">
+      <article class="card">
+        <h2>Import local media</h2>
+        <p>
+          Use Import to add audio or video from Files or Photos. Imported files are copied
+          into DarkPlayer's local app storage for offline playback.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>WiFi Transfer</h2>
+        <p>
+          Open WiFi Transfer in the app, then open the displayed address or scan the QR code
+          from another device on the same WiFi network. Keep DarkPlayer open until uploads finish.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Google Drive import</h2>
+        <p>
+          Connect Google Drive from the Import screen, choose audio or video files, and import
+          them into a playlist. Google handles sign-in; DarkPlayer only imports selected media.
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Equalizer and playback</h2>
+        <p>
+          Open the Equalizer from Settings or the Now Playing screen to adjust 10-band tuning
+          and presets. Background playback can be controlled from the lock screen and headphones.
+        </p>
+      </article>
+
+      <article class="card wide">
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li>If WiFi Transfer cannot open, confirm both devices are on the same WiFi network.</li>
+          <li>If Google Drive sign-in fails, confirm the Google account has access to the selected files.</li>
+          <li>If a file cannot play, try importing a common audio or video format such as MP3, AAC, FLAC, WAV, M4A, MP4, or MOV.</li>
+          <li>If lock screen controls do not appear, start playback in DarkPlayer and keep background audio enabled for the app.</li>
+        </ul>
+      </article>
+
+      <article id="contact" class="card wide">
+        <h2>Contact</h2>
+        <p>
+          For support, contact the developer through the support email listed on DarkPlayer's
+          App Store product page. Please include your device model, iOS version, app version,
+          and a short description of the problem.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      DarkPlayer Support
+    </footer>
+  </main>
+</body>
+</html>
