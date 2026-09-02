@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --paper: #f5f0e8;
+      --ink: #22201d;
+      --muted: #756f66;
+      --green: #40c56a;
+      --metal: #2a2926;
+      --line: rgba(34, 32, 29, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% -8%, rgba(255,255,255,0.28), transparent 34%),
+        linear-gradient(180deg, #11100f, #050505);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.74;
+    }
+    .page {
+      width: min(760px, calc(100% - 28px));
+      margin: max(26px, env(safe-area-inset-top)) auto 34px;
+      background: var(--paper);
+      border-radius: 26px;
+      padding: 26px 22px 30px;
+      box-shadow: 0 18px 60px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,255,255,0.72);
+      position: relative;
+      overflow: hidden;
+    }
+    .page:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .23;
+      background-image: radial-gradient(rgba(34,32,29,.18) 0.7px, transparent 0.7px);
+      background-size: 10px 10px;
+    }
+    header, section { position: relative; }
+    .icon {
+      width: 82px;
+      height: 82px;
+      border-radius: 22px;
+      margin: 0 auto 14px;
+      background: linear-gradient(145deg, #eef3f6, #c8cdd3);
+      display: grid;
+      place-items: center;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.8), 0 10px 22px rgba(0,0,0,.18);
+    }
+    .lens {
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 62% 28%, #5d8bd3 0 13%, transparent 14%),
+        radial-gradient(circle at 56% 68%, #934879 0 15%, transparent 16%),
+        radial-gradient(circle at center, #1b1530 0 33%, #4d4b54 34% 61%, #77777d 62% 72%, #4f4e55 73%);
+      border: 4px solid #6a6a72;
+    }
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      letter-spacing: 0;
+    }
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin: 7px 0 22px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    h2 {
+      margin: 26px 0 8px;
+      font-size: 18px;
+      color: #302d29;
+    }
+    p, li { font-size: 15px; color: #38342f; }
+    ul { padding-left: 20px; }
+    .plate {
+      margin-top: 20px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.38);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    strong { color: #1f1d1a; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="icon"><div class="lens"></div></div>
+      <h1>Privacy Policy</h1>
+      <div class="subtitle">CCD RETRO CAMERA</div>
+    </header>
+
+    <section>
+      <p>We designed CCD Retro Camera to work like a dependable pocket camera: capture a photo, create its look, and save it with as little interruption as possible. This policy explains how the app handles information related to you.</p>
+
+      <h2>Permissions We Use</h2>
+      <ul>
+        <li><strong>Camera:</strong> used for the live viewfinder, taking photos, switching between front and rear cameras, and previewing simulated camera looks.</li>
+        <li><strong>Photos:</strong> used to save finished photos to your system library and to show library images when you open the photo picker.</li>
+        <li><strong>Microphone:</strong> the current version does not record audio and does not request microphone access.</li>
+      </ul>
+
+      <h2>Photos and Camera Effects</h2>
+      <p>Photo processing takes place on your device. This includes color rendering, film grain, instant-film paper, borders, date stamps, and other camera effects. We do not upload your photos to our servers or use them to train models.</p>
+
+      <h2>Settings and Preferences</h2>
+      <p>Your selected camera model and preferences, such as the date watermark and camera sounds, may be stored locally so the app can restore them the next time you open it.</p>
+
+      <h2>Sharing</h2>
+      <p>When you use the share feature, Apple's system share sheet handles the destination you choose. We do not learn who you share with and do not collect the shared content.</p>
+
+      <h2>Third-Party Services</h2>
+      <p>The current version does not include third-party analytics SDKs, advertising SDKs, or account sign-in. If this changes, we will explain the relevant service and data handling in an updated policy.</p>
+
+      <h2>Children's Privacy</h2>
+      <p>The app is intended for general photography and entertainment and does not knowingly collect personal information from children. Minors should use it with the guidance of a parent or guardian.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions about this policy, camera effects, or permission use, please contact us through the developer contact information on the App Store product page.</p>
+
+      <div class="plate">Last updated: September 1, 2026. We may update this policy as the app evolves.</div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Support for CCDCamera, a tactile retro digital, film, and instant camera for iPhone.">
+  <title>CCDCamera Support</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --ink: #f7f5ef;
+      --muted: #b9b5aa;
+      --panel: #191918;
+      --line: #343330;
+      --accent: #55ce78;
+      --paper: #ece9df;
+    }
+    * { box-sizing: border-box; }
+    html { background: #080808; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: #080808;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.6;
+      letter-spacing: 0;
+    }
+    .shell {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: max(36px, env(safe-area-inset-top)) 0 max(52px, env(safe-area-inset-bottom));
+    }
+    header {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 22px;
+      align-items: center;
+      padding: 22px 0 38px;
+      border-bottom: 1px solid var(--line);
+    }
+    .icon {
+      width: 86px;
+      aspect-ratio: 1;
+      border-radius: 18px;
+      box-shadow: 0 16px 34px rgba(0,0,0,.42), inset 0 1px 0 white;
+      object-fit: cover;
+    }
+    h1 { margin: 0 0 4px; font-size: clamp(32px, 6vw, 54px); line-height: 1.02; }
+    .tagline { margin: 0; color: var(--muted); font-size: 17px; }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+      color: #dcecdf;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .status::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); }
+    nav { display: flex; flex-wrap: wrap; gap: 10px; padding: 24px 0; }
+    nav a, .button {
+      color: var(--ink);
+      text-decoration: none;
+      border: 1px solid var(--line);
+      background: #121211;
+      padding: 10px 14px;
+      border-radius: 7px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    h2 { margin: 46px 0 18px; font-size: 25px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+    article {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 21px;
+    }
+    article h3 { margin: 0 0 8px; font-size: 17px; }
+    article p { margin: 0; color: var(--muted); font-size: 15px; }
+    .steps { margin: 0; padding-left: 22px; color: var(--muted); }
+    .steps li { margin: 10px 0; padding-left: 5px; }
+    .privacy {
+      margin-top: 18px;
+      padding: 24px;
+      border: 1px solid #39523f;
+      background: #111913;
+      border-radius: 8px;
+    }
+    .privacy strong { color: #dff3e4; }
+    footer { margin-top: 54px; padding-top: 24px; border-top: 1px solid var(--line); color: #77746c; font-size: 13px; }
+    footer a { color: #aaa69b; }
+    @media (max-width: 620px) {
+      header { grid-template-columns: 1fr; }
+      .grid { grid-template-columns: 1fr; }
+      .icon { width: 76px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <img class="icon" src="app-icon.png" alt="CCDCamera app icon">
+      <div>
+        <h1>CCDCamera Support</h1>
+        <p class="tagline">Help for your digital, film, and instant camera collection.</p>
+        <div class="status">Designed for iPhone · Processing stays on device</div>
+      </div>
+    </header>
+
+    <nav aria-label="Support links">
+      <a href="#quick-help">Quick help</a>
+      <a href="#permissions">Permissions</a>
+      <a href="#troubleshooting">Troubleshooting</a>
+      <a href="ccdprivacy.html">Privacy Policy</a>
+      <a href="ccdterms.html">Terms of Use</a>
+    </nav>
+
+    <section id="quick-help">
+      <h2>Quick help</h2>
+      <div class="grid">
+        <article>
+          <h3>Choose a camera</h3>
+          <p>Tap the camera model button on the shooting screen. Pick from Digital, Film, or Instant. Use the down button to close the model sheet.</p>
+        </article>
+        <article>
+          <h3>Find sample photos</h3>
+          <p>Open the model sheet and tap Samples beside the selected camera. Each gallery demonstrates that camera’s intended color and frame.</p>
+        </article>
+        <article>
+          <h3>Date and camera sounds</h3>
+          <p>Open Settings from the model sheet. Date Watermark affects film and instant cameras; digital-camera timestamps remain part of their signature look.</p>
+        </article>
+        <article>
+          <h3>Portrait and landscape</h3>
+          <p>Hold your iPhone in the direction you want to shoot. CCDCamera reads physical orientation even when iOS Portrait Orientation Lock is enabled.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="permissions">
+      <h2>Permissions</h2>
+      <div class="grid">
+        <article>
+          <h3>Camera</h3>
+          <p>Required for the live viewfinder, front and rear camera switching, and photo capture.</p>
+        </article>
+        <article>
+          <h3>Photos</h3>
+          <p>Used only when you save a finished photo or open the system photo library from inside the app.</p>
+        </article>
+      </div>
+      <div class="privacy"><strong>Your images are processed locally.</strong> CCDCamera does not require an account and does not upload your photos for camera-effect processing.</div>
+    </section>
+
+    <section id="troubleshooting">
+      <h2>Troubleshooting</h2>
+      <ol class="steps">
+        <li>If the viewfinder is unavailable, open iPhone Settings → Privacy &amp; Security → Camera and enable CCDCamera.</li>
+        <li>If a photo cannot be saved, open iPhone Settings → Privacy &amp; Security → Photos and allow CCDCamera to add photos.</li>
+        <li>If camera sounds are silent, verify Camera Sounds is enabled inside CCDCamera Settings and check the iPhone volume.</li>
+        <li>If orientation is incorrect, return the phone upright briefly, then rotate it steadily before pressing the shutter.</li>
+        <li>If an issue remains, include your iPhone model, iOS version, selected camera, and the steps that reproduce it when contacting the developer through the App Store listing.</li>
+      </ol>
+    </section>
+
+    <footer>
+      <p>CCDCamera · Version 1.0 support</p>
+      <p><a href="ccdprivacy.html">Privacy Policy</a> · <a href="ccdterms.html">Terms of Use</a></p>
+      <p>© 2026 CCDCamera. All rights reserved.</p>
+    </footer>
+  </main>
+</body>
+</html>

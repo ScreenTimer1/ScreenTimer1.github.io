@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Terms of Use</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --paper: #f5f0e8;
+      --ink: #22201d;
+      --muted: #756f66;
+      --accent: #c99b56;
+      --line: rgba(34, 32, 29, 0.14);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% -10%, rgba(245,240,232,.20), transparent 36%),
+        linear-gradient(180deg, #141312, #050505);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      color: var(--ink);
+      line-height: 1.74;
+    }
+    .page {
+      width: min(760px, calc(100% - 28px));
+      margin: max(26px, env(safe-area-inset-top)) auto 34px;
+      background: var(--paper);
+      border-radius: 26px;
+      padding: 26px 22px 30px;
+      box-shadow: 0 18px 60px rgba(0,0,0,0.42), inset 0 1px 0 rgba(255,255,255,0.72);
+      position: relative;
+      overflow: hidden;
+    }
+    .page:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: .20;
+      background-image:
+        linear-gradient(90deg, rgba(34,32,29,.08) 1px, transparent 1px),
+        radial-gradient(rgba(34,32,29,.16) 0.7px, transparent 0.7px);
+      background-size: 18px 18px, 10px 10px;
+    }
+    header, section { position: relative; }
+    .camera {
+      width: 98px;
+      height: 66px;
+      border-radius: 16px;
+      margin: 6px auto 16px;
+      background: linear-gradient(90deg, #d8ad6a 0 32%, #223329 32% 76%, #252523 76%);
+      box-shadow: inset 0 2px 0 rgba(255,255,255,.22), 0 12px 22px rgba(0,0,0,.2);
+      position: relative;
+    }
+    .camera:before {
+      content: "";
+      position: absolute;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      left: 38px;
+      top: 15px;
+      background: radial-gradient(circle at 60% 35%, #172234 0 14%, #05070a 15% 39%, #b8b6a8 40% 52%, #2c2c2a 53%);
+      border: 4px solid #dcd8cc;
+    }
+    .camera:after {
+      content: "";
+      position: absolute;
+      right: 10px;
+      top: 9px;
+      width: 16px;
+      height: 8px;
+      border-radius: 3px;
+      background: #e8efe3;
+    }
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+    }
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin: 7px 0 22px;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    h2 {
+      margin: 26px 0 8px;
+      font-size: 18px;
+      color: #302d29;
+    }
+    p, li { font-size: 15px; color: #38342f; }
+    ul { padding-left: 20px; }
+    .plate {
+      margin-top: 20px;
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.38);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    strong { color: #1f1d1a; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <div class="camera"></div>
+      <h1>Terms of Use</h1>
+      <div class="subtitle">RETRO TOY CAMERA TERMS</div>
+    </header>
+
+    <section>
+      <p>Welcome to CCDCamera. By using this app, you acknowledge and agree to these terms. We have kept them as focused and straightforward as the retro camera experience itself.</p>
+
+      <h2>The Service</h2>
+      <p>The app provides a live viewfinder, photo capture, simulated camera models, retro image processing, instant-film paper, film borders, date watermarks, sample galleries, and local photo-library access.</p>
+
+      <h2>Your Content</h2>
+      <p>You retain ownership of the photos you capture, save, and share. You are responsible for having the right to photograph and use the people, places, and objects involved, and for respecting privacy, publicity, and intellectual-property rights.</p>
+
+      <h2>Acceptable Use</h2>
+      <ul>
+        <li>Do not use the app for unlawful, infringing, harassing, or harmful activity.</li>
+        <li>Do not attempt to disrupt, reverse engineer, or bypass the app's normal operation or security restrictions, except where applicable law expressly permits it.</li>
+        <li>Use camera features only where photography is permitted.</li>
+      </ul>
+
+      <h2>Creative Simulations</h2>
+      <p>Retro rendering, film borders, instant paper, grain, and date watermarks are creative simulations. They are not exact reproductions of any physical camera or film stock. Results vary with device hardware, lighting, orientation, and subject matter.</p>
+
+      <h2>Local Documents and Sharing</h2>
+      <p>The Privacy Policy and these Terms are displayed from documents bundled with the app. The share feature uses the system share sheet. The App Store link currently uses placeholder app ID 123456789 and may be updated when the final listing becomes available.</p>
+
+      <h2>Disclaimer</h2>
+      <p>We work to keep the app reliable, but do not guarantee uninterrupted or error-free operation on every device, system version, or capture condition. Device permissions, storage, the system photo library, and third-party sharing destinations may be outside our control.</p>
+
+      <h2>Changes to These Terms</h2>
+      <p>We may update these terms as the app changes. Your continued use of an updated version means you accept the revised terms.</p>
+
+      <div class="plate">Last updated: September 1, 2026. Thank you for trusting this little retro camera with your everyday moments.</div>
+    </section>
+  </main>
+</body>
+</html>
