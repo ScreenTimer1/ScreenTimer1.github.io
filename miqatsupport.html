@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Help, troubleshooting, and contact information for the Miqāt prayer-time app for iPhone.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#0d6756">
+  <title>Miqāt Support | دعم مِيقَات</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d6756'/%3E%3Cpath d='M14 48h36M20 48V31a12 12 0 0 1 24 0v17' fill='none' stroke='white' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <a class="skip-link skip-link-en" href="#english">Skip to support</a>
+  <a class="skip-link skip-link-ar" href="#arabic" lang="ar" dir="rtl">الانتقال إلى الدعم</a>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="miqatindex.html" aria-label="Miqāt home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M5 18.5h14M7 18.5V11a5 5 0 0 1 10 0v7.5M9 7.2A3.6 3.6 0 0 1 12 4a3.6 3.6 0 0 1 3 3.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span>Miqāt</span>
+      </a>
+      <nav class="nav-links" aria-label="Support languages and site navigation">
+        <a href="miqatindex.html">Home</a>
+        <a href="miqatprivacy.html">Privacy</a>
+        <a class="language-link" href="#english">English</a>
+        <a class="language-link" href="#arabic" lang="ar" dir="rtl">العربية</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <article class="language-section" id="english" aria-labelledby="support-title-en">
+      <header class="legal-header">
+        <p class="eyebrow">Miqāt 1.0 · iOS 17 or later</p>
+        <h1 id="support-title-en">Support</h1>
+        <p class="lead">Find quick answers for prayer times, location, Qibla, alerts, and widgets. Miqāt has no account, so there is no password or cloud profile to recover.</p>
+      </header>
+
+      <section class="legal-section" aria-labelledby="contact-title-en">
+        <h2 id="contact-title-en">Contact us</h2>
+        <div class="contact-card">
+          <p><strong>Developer:</strong> <bdi dir="ltr" lang="en">Shenzhen Jirry Jirry Technology Co., Ltd</bdi></p>
+          <p><strong>Support email:</strong> <a href="mailto:support@jirryjirry.com"><bdi dir="ltr" lang="en">support@jirryjirry.com</bdi></a></p>
+        </div>
+        <p>When contacting support, it helps to include:</p>
+        <ul>
+          <li>Miqāt version and build number;</li>
+          <li>iOS version and iPhone model;</li>
+          <li>selected city, time zone, calculation method, and Asr rule;</li>
+          <li>the exact screen and action where the problem occurred.</li>
+        </ul>
+        <div class="notice">Miqāt does not automatically attach your location, settings, logs, or diagnostics. Send only what you choose, and remove precise coordinates, notification content, or other sensitive details from screenshots unless they are necessary.</div>
+      </section>
+
+      <section class="legal-section faq" aria-labelledby="faq-title-en">
+        <h2 id="faq-title-en">Frequently asked questions</h2>
+
+        <details open>
+          <summary>Why do Miqāt’s prayer times differ from my mosque?</summary>
+          <p>Prayer times can differ because of the calculation method, Fajr and Isha parameters, Asr rule, high-latitude rule, rounding, time zone, manual adjustments, or a mosque’s own timetable.</p>
+          <ol>
+            <li>Open Settings → Prayer-Time Calculation.</li>
+            <li>Confirm the city, time zone, method, Asr rule, and high-latitude rule.</li>
+            <li>Open a prayer’s detail page to see its calculated start and adjustment.</li>
+            <li>If needed, apply a manual adjustment of up to 30 minutes and compare with a trusted local source.</li>
+          </ol>
+          <p>Miqāt does not claim that one calculation method is universally authoritative.</p>
+        </details>
+
+        <details>
+          <summary>Can I use the app without Location permission?</summary>
+          <p>Yes. During onboarding or from Settings → Location &amp; Time, choose a city manually. Prayer times, Qibla bearing, calendar, reminders, and widgets can then use that city without requesting your current location.</p>
+        </details>
+
+        <details>
+          <summary>Why is my current location unavailable?</summary>
+          <ul>
+            <li>Open iOS Settings → Privacy &amp; Security → Location Services → Miqāt and allow access While Using the App.</li>
+            <li>Return to Miqāt while the app is in the foreground and try again.</li>
+            <li>If the reading still fails, choose a city manually.</li>
+          </ul>
+          <p>Miqāt does not request continuous or background location.</p>
+        </details>
+
+        <details>
+          <summary>Why did a standard reminder not appear or make a sound?</summary>
+          <ul>
+            <li>Check Settings → Notifications → Miqāt.</li>
+            <li>Confirm the prayer rule is enabled and “Pause All Reminders” is off.</li>
+            <li>Review Focus, Silent Mode, volume, Lock Screen, and scheduled-summary settings.</li>
+            <li>Open Miqāt and use its test-reminder action.</li>
+          </ul>
+          <p>Standard local notifications remain subject to iOS settings, power state, and system limits. Scheduling a notification does not guarantee delivery under every condition.</p>
+        </details>
+
+        <details>
+          <summary>What is Prayer Alarm?</summary>
+          <p>On iOS 26 or later, Prayer Alarm is an optional AlarmKit mode with separate system authorization. It is more prominent than a standard notification and may sound through Focus or Silent Mode. If it is unavailable, denied, or cannot be scheduled, Miqāt can fall back to a standard local notification when notification permission allows.</p>
+        </details>
+
+        <details>
+          <summary>Why is the Qibla compass unstable?</summary>
+          <ul>
+            <li>Move away from magnets, metal cases, speakers, vehicles, and large metal objects.</li>
+            <li>Hold the iPhone flat and follow any iOS calibration guidance.</li>
+            <li>Use the displayed numerical bearing from true north if the sensor remains unstable.</li>
+          </ul>
+          <p>The calculated bearing is an estimate; the live pointer also depends on device sensors and the surrounding environment.</p>
+        </details>
+
+        <details>
+          <summary>Why does the Widget say to open Miqāt?</summary>
+          <p>The Widget stops presenting an old countdown when its local projection expires or when a saved current-location time zone no longer matches the device after travel. Open Miqāt, review the location and time zone, and refresh the current location if requested.</p>
+        </details>
+
+        <details>
+          <summary>What happens when I travel to another time zone?</summary>
+          <p>Miqāt does not silently combine an old coordinate with a new time zone. Open the app after travel. If you use Current Location, review and refresh it. If you intentionally use a fixed city, you can keep that city.</p>
+        </details>
+
+        <details>
+          <summary>How do I delete local data?</summary>
+          <p>Open Settings → Privacy &amp; Sources → Reset All Local Settings. This clears Miqāt’s saved settings, location snapshot, mosque information, reminder records, and Widget data, removes Miqāt-owned standard notification requests, and asks iOS to cancel tracked Prayer Alarms. It does not revoke system permissions; change those separately in iOS Settings.</p>
+        </details>
+      </section>
+
+      <section class="legal-section">
+        <h2>Prayer-time and Qibla notice</h2>
+        <p>Prayer times are calculated from the selected location, time zone, calculation method, and settings. Results may differ from a local mosque or authority. Qibla guidance can be affected by sensor accuracy and nearby objects. Compare with a trusted local source when needed.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>Support privacy</h2>
+        <p>If you email support, we receive only the address, message, and attachments you choose to send. We use them only to respond, troubleshoot, protect the service, and meet legal obligations. Support communications are retained for up to 12 months after the last correspondence unless a longer period is required for security, dispute resolution, or law. You can request deletion by contacting us.</p>
+        <p>Read the complete <a href="miqatprivacy.html#english">Miqāt Privacy Policy</a>.</p>
+      </section>
+    </article>
+
+    <article class="language-section" id="arabic" lang="ar" dir="rtl" aria-labelledby="support-title-ar">
+      <header class="legal-header">
+        <p class="eyebrow">مِيقَات ١٫٠ · iOS 17 أو أحدث</p>
+        <h1 id="support-title-ar">الدعم الفني</h1>
+        <p class="lead">إجابات سريعة عن مواقيت الصلاة والموقع والقبلة والتنبيهات والأدوات المصغّرة. لا يتطلب مِيقَات إنشاء حساب، لذلك لا توجد كلمة مرور أو بيانات سحابية لاستعادتها.</p>
+      </header>
+
+      <section class="legal-section" aria-labelledby="contact-title-ar">
+        <h2 id="contact-title-ar">تواصل معنا</h2>
+        <div class="contact-card">
+          <p><strong>المطوّر:</strong> <bdi dir="ltr" lang="en">Shenzhen Jirry Jirry Technology Co., Ltd</bdi></p>
+          <p><strong>بريد الدعم:</strong> <a href="mailto:support@jirryjirry.com"><bdi dir="ltr" lang="en">support@jirryjirry.com</bdi></a></p>
+        </div>
+        <p>يساعدنا أن تتضمن رسالة الدعم:</p>
+        <ul>
+          <li>إصدار مِيقَات ورقم البناء؛</li>
+          <li>إصدار iOS وطراز iPhone؛</li>
+          <li>المدينة والمنطقة الزمنية وطريقة الحساب وقاعدة العصر المختارة؛</li>
+          <li>الشاشة والإجراء اللذان ظهرت عندهما المشكلة.</li>
+        </ul>
+        <div class="notice">لا يرفق مِيقَات موقعك أو إعداداتك أو السجلات أو التشخيصات تلقائيًا. أرسل فقط ما تختاره، واحذف الإحداثيات الدقيقة أو محتوى الإشعارات أو التفاصيل الحساسة من الصور ما لم تكن ضرورية.</div>
+      </section>
+
+      <section class="legal-section faq" aria-labelledby="faq-title-ar">
+        <h2 id="faq-title-ar">الأسئلة المتكررة</h2>
+
+        <details open>
+          <summary>لماذا تختلف مواقيت مِيقَات عن مواقيت مسجدي؟</summary>
+          <p>قد تختلف المواقيت بسبب طريقة الحساب ومعاملات الفجر والعشاء وقاعدة العصر وقاعدة خطوط العرض العالية والتقريب والمنطقة الزمنية والتعديلات اليدوية أو جدول المسجد نفسه.</p>
+          <ol>
+            <li>افتح الإعدادات ← إعدادات حساب المواقيت.</li>
+            <li>تحقق من المدينة والمنطقة الزمنية والطريقة وقاعدة العصر وخطوط العرض العالية.</li>
+            <li>افتح تفاصيل الصلاة لرؤية دخول الوقت المحسوب والتعديل.</li>
+            <li>عند الحاجة، أضف تعديلًا يدويًا لا يتجاوز ٣٠ دقيقة وقارن بمصدر محلي موثوق.</li>
+          </ol>
+          <p>لا يدّعي مِيقَات أن طريقة حساب واحدة ملزمة أو معتمدة في كل مكان.</p>
+        </details>
+
+        <details>
+          <summary>هل يمكن استخدام التطبيق من دون إذن الموقع؟</summary>
+          <p>نعم. اختر مدينة يدويًا أثناء الإعداد الأولي أو من الإعدادات ← الموقع والوقت. تستخدم المواقيت واتجاه القبلة والتقويم والتذكيرات والأدوات تلك المدينة من دون طلب موقعك الحالي.</p>
+        </details>
+
+        <details>
+          <summary>لماذا لا يتوفر موقعي الحالي؟</summary>
+          <ul>
+            <li>افتح إعدادات iOS ← الخصوصية والأمان ← خدمات الموقع ← مِيقَات، واختر «أثناء استخدام التطبيق».</li>
+            <li>ارجع إلى مِيقَات وهو في الواجهة وحاول مرة أخرى.</li>
+            <li>إذا استمر التعذر، اختر مدينة يدويًا.</li>
+          </ul>
+          <p>لا يطلب مِيقَات الموقع المستمر أو في الخلفية.</p>
+        </details>
+
+        <details>
+          <summary>لماذا لم يظهر التنبيه العادي أو يصدر صوتًا؟</summary>
+          <ul>
+            <li>تحقق من إعدادات iOS ← الإشعارات ← مِيقَات.</li>
+            <li>تأكد من تفعيل تذكير الصلاة المعنية ومن عدم تفعيل «إيقاف جميع التذكيرات مؤقتًا».</li>
+            <li>راجع نمط التركيز ونمط الصامت ومستوى الصوت وشاشة القفل والملخص المجدول.</li>
+            <li>افتح مِيقَات واستخدم خيار التنبيه التجريبي.</li>
+          </ul>
+          <p>تظل الإشعارات المحلية العادية خاضعة لإعدادات iOS وحالة الطاقة وحدود النظام، ولا تعني الجدولة ضمان ظهورها في كل حالة.</p>
+        </details>
+
+        <details>
+          <summary>ما منبّه الصلاة؟</summary>
+          <p>في iOS 26 أو أحدث، يكون منبّه الصلاة ميزة اختيارية تعتمد على AlarmKit وتتطلب إذنًا مستقلًا من النظام. وهو أوضح من الإشعار العادي، وقد يصدر صوتًا مع تشغيل نمط التركيز أو نمط الصامت. إذا لم يتوفر أو رُفض إذنه أو تعذرت جدولته، يمكن لمِيقَات الرجوع إلى إشعار محلي عادي عندما يسمح إذن الإشعارات بذلك.</p>
+        </details>
+
+        <details>
+          <summary>لماذا لا تستقر بوصلة القبلة؟</summary>
+          <ul>
+            <li>ابتعد عن المغناطيس والأغطية المعدنية والسماعات والمركبات والأجسام المعدنية الكبيرة.</li>
+            <li>أمسك iPhone بصورة مستوية واتبع إرشادات المعايرة التي يعرضها iOS إن ظهرت.</li>
+            <li>استخدم قيمة زاوية الاتجاه المعروضة بالنسبة إلى الشمال الحقيقي إذا لم يستقر المستشعر.</li>
+          </ul>
+          <p>الاتجاه المحسوب تقديري، كما يعتمد المؤشر المباشر على مستشعرات الجهاز والبيئة المحيطة.</p>
+        </details>
+
+        <details>
+          <summary>لماذا تطلب الأداة فتح مِيقَات؟</summary>
+          <p>تتوقف الأداة عن عرض عد تنازلي قديم عند انتهاء صلاحية ملخص المواقيت المحلي، أو بعد السفر عندما لا تعود المنطقة الزمنية المحفوظة في لقطة الموقع الحالي مطابقة للمنطقة الزمنية للجهاز. افتح مِيقَات وراجع الموقع والمنطقة الزمنية، ثم حدّث الموقع الحالي إذا طُلب ذلك.</p>
+        </details>
+
+        <details>
+          <summary>ماذا يحدث عند السفر إلى منطقة زمنية أخرى؟</summary>
+          <p>لا يدمج مِيقَات بصمت إحداثيات قديمة مع منطقة زمنية جديدة. افتح التطبيق بعد السفر. إذا كنت تستخدم الموقع الحالي، راجعه وحدّثه. وإذا كنت تقصد استخدام مدينة ثابتة فيمكنك الاحتفاظ بها.</p>
+        </details>
+
+        <details>
+          <summary>كيف أحذف البيانات المحلية؟</summary>
+          <p>افتح الإعدادات ← الخصوصية والمصادر ← إعادة تعيين جميع الإعدادات المحلية. يحذف ذلك إعدادات مِيقَات ولقطة الموقع وبيانات المسجد وبيانات جدولة التذكيرات وبيانات الأداة، ويزيل طلبات الإشعارات العادية التابعة لمِيقَات، ويطلب من iOS إلغاء منبّهات الصلاة التي سبق أن جدولها التطبيق. لا يؤدي ذلك إلى إلغاء أذونات النظام؛ غيّرها بصورة منفصلة في إعدادات iOS.</p>
+        </details>
+      </section>
+
+      <section class="legal-section">
+        <h2>تنبيه بشأن المواقيت والقبلة</h2>
+        <p>تُحسب مواقيت الصلاة من الموقع والمنطقة الزمنية وطريقة الحساب والإعدادات المختارة، وقد تختلف عن المواقيت المعتمدة لدى مسجد أو جهة محلية. وقد تتأثر إشارة البوصلة الحية للقبلة بدقة المستشعر والأجسام القريبة. قارن بمصدر محلي موثوق عند الحاجة.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>خصوصية الدعم</h2>
+        <p>إذا راسلت الدعم، نتلقى فقط عنوان بريدك الإلكتروني والرسالة والمرفقات التي تختار إرسالها. نستخدمها للرد وحل المشكلة وحماية الخدمة والوفاء بالالتزامات القانونية، ولا نستخدمها للإعلانات أو إنشاء ملفات تعريف للمستخدمين. نحتفظ بالمراسلات مدة لا تتجاوز ١٢ شهرًا بعد آخر تواصل، ما لم تتطلب الحماية أو تسوية نزاع أو القوانين مدة أطول. ويمكنك طلب حذفها عبر التواصل معنا.</p>
+        <p>اقرأ <a href="miqatprivacy.html#arabic">سياسة الخصوصية الكاملة لمِيقَات</a>.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>© 2026 <bdi dir="ltr" lang="en">Shenzhen Jirry Jirry Technology Co., Ltd</bdi></span>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="miqatindex.html">Miqāt</a>
+        <a href="miqatprivacy.html">Privacy · الخصوصية</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
